@@ -36,8 +36,8 @@ paddle.rect.y = 710
 
 # Create ball
 ball = Ball(WHITE,10,10)
-ball.rect.x = 345
-ball.rect.y = 295
+ball.rect.x = 475
+ball.rect.y = 355
 
 # Create bricks
 all_bricks = pygame.sprite.Group()
@@ -105,8 +105,8 @@ while carryOn:
     if ball.rect.x<=3:
         ball.velocity[0] = -ball.velocity[0]
     if ball.rect.y>710:
-        ball.rect.x = 345
-        ball.rect.y = 295
+        ball.rect.x = 475
+        ball.rect.y = 355
         pygame.time.wait(1000)
         lives -= 1
         if lives == 0:
